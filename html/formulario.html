@@ -4,34 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
-<body>
-    <a href="../index.html"><h2>VOLVER ATRÀS</h2></a>
+<body style="background-color: rgb(244, 238, 249);">
+    <h1 style="color: rgb(212, 30, 148); width: 100%;font-size: 250%; text-align: center;">FORMULARIOS</h1>
+    <a href="../index.html"><h2><img src="../multimedia/img/flecha.png" alt="Fleca" width="20px" height="20px">VOLVER ATRÀS</h2></a>
     <!-- Primer formulario  -->
     <form action="" id="info_personal">
         <fieldset>
-            <legend>Informaciòn personal</legend>
+            <legend><strong>Informaciòn personal</strong></legend>
             <label for="">Nombre:</label>
-            <input type="text">
-            <br>
+            <input type="text" placeholder="Ingrese texto">
+            <br><br>
             <label for="">Apellidos:</label>
-            <input type="text">
-            <br>
-            <label for="">Password</label>
-            <input type="password">
-            <br>
+            <input type="text" placeholder="Ingrese texto">
+            <br><br>
+            <label for="Tipo">Tipo de documento</label>
+            <select name="Tipo" id="Tipo">
+            <option value="">Opciones</option>
+            <option value="">Tarjeta de identidad</option>
+            <option value="">Cedula de ciudadania</option>
+            </select>
+            <br><br>
+            <label for="">Numero de documeto</label>
+            <input type="number" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Número de telefono</label>
+            <input type="number" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Correo electronico</label>
+            <input type="email" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Contraseña</label>
+            <input type="password" placeholder="Ingrese texto">
+            <br><br>
             <label for="">Fecha de nacimiento</label>
-            <input type="date">
-            <br><input type="color" name="" id="">
-            <br><input type="number" name="" id="">
-            <br><input type="file"> 
+            <input type="date" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Dirección de residencia</label>
+            <input type="text" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Género</label>
+            <select name="" id="">
+            <option value="">Opciones</option>
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+            </select>
+            <br><br>
+            <label for="">Ingrese su documento escaneado</label>
+            <br><input type="file" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Ingrese su color favorito</label>
+            <input type="color" name="" id="">
+            <br>   
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <legend>Informaciòn laboral</legend>
+            <legend><Strong>Informaciòn laboral</Strong></legend>
+            <label for="">Tiene experiencia laboral</label>
+                <select name="" id="">
+                <option value="">Opciones</option>
+                <option value="">Si</option>
+                <option value="">No</option>
+                </select>
+            <br><br>
+            <label for="">Ingrese certificado de experiencia laboral</label>
+            <br><input type="file">
+            <br><br>
+            <Label>Cargo en el que trabaja</Label>
+            <input type="text" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Numero de seguro social</label>
+            <input type="number" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Salario</label>
+            <input type="number" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Cuanto tiempo tiene trabajando (meses)</label>
+            <input type="number" placeholder="Ingrese texto">   
+            <br><br>
+            <label for="">Habilidades</label>
+            <select name="" id="">
+                <option value="">Opciones</option>
+                <option value="">Ganas de aprender</option>
+                <option value="">Trabajo en equipo</option>
+                <option value="">Comunicación</option>
+                <option value="">Respeto</option>
+                <option value="">Todas las anteriores</option>
+            </select>
+            <br><br>
+            <label for="">Modalidad de trabajo</label>
+            <select name="" id="">
+                <option value="">Opciones</option>
+                <option value="">Termino fijo</option>
+                <option value="">Termino indefinido</option>
+            </select>
+
         </fieldset>
     </form>
+    <form action="">
+        <fieldset>
+            <legend><Strong>Informaciòn Academica</Strong></legend>
+            <label for="">Grado de escolaridad</label>
+            <select name="" id="">
+                <option value="">Opciones</option>
+                <option value="">Ninguno</option>
+                <option value="">Basica primaria</option>
+                <option value="">Basica secundaria</option>
+                <option value="">Bachillerato</option>
+                <option value="">Posgrado</option>
+                <option value="">Especialización</option>
+                </select>
+            <br><br>
+            <label for="">Nombre de la institución en la que estudio (si corresponde)</label>
+            <input type="text" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Ingrese diploma de su escolaridad</label>
+            <br><input type="file">
+            <br><br>
+            <label for="">Grado o titulo obtenido</label>
+            <input type="text" placeholder="Ingrese texto">
+            <br><br>
+            <label for="">Desea seguir con sus estudios:</label>
+            <label for="">Si</label>
+            <input type="checkbox">
+            <label for="">No</label><input type="checkbox">
+            <br><br>
+            <label for="">Que desea estudiar (si corresponde)</label>
+            <input type="text" placeholder="Ingrese texto">
+
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit" value="Enviar formulario">
 </body>
 </html>
