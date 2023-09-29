@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
-<body style="background-color: rgb(244, 238, 249);">
-    <h1 style="color: rgb(212, 30, 148); width: 100%;font-size: 250%; text-align: center;">INGRESE A UNA PÁGINA</h1>
-    <div>
-        <ul>
-            <li><a href="html/tablas.html"><h2>IR A TABLAS</h2></a></li>
-            <li><a href="html/formulario.html"><h2>IR A FORMULARIOS</h2></a></li>
-            <li><a href="html/texto.html"><h2>IR A TEXTO</h2></a></li>
-            <li><a href="html/semantica.html"><h2>IR A SEMANTICA</h2></a></li>
-            <li><a href="html/agrupacion.html"><h2>IR A AGRUPACIÒN</h2></a></li>
-            <li><a href="html/multimedia.html"><h2>IR A MULTIMEDIA</h2></a></li>
-            <li><a href="html/estilos.html"><h2>IR A ESTILOS</h2></a></li>
-            <li><a href="html/flexbox.html"><h2>IR A FLEXBOX</h2></a></li>
-            <!-- Se comenta con control  -->
-        </ul>
+
+<body>
+    <div class="background"></div>
+    <div class="centerig">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+                <img src="https://i.pinimg.com/originals/86/11/45/861145c665ca2c5a441e47ee172ae40c.png" alt=""
+                    class="login">
+                <h1> INICIAR SESIÒN</h1>
+            </div>
+            <div class="text_field">
+                <label for="">Email</label>
+                <input type="email" id="email" aria-label="email" placeholder="Ingrese su email" required>
+                <img src="../clasesviernes/multimedia/img/email" alt="Email Icon" title="Email Icon">
+            </div>
+            <div class="text_field">
+                <label for="password">Password</label>
+                <input type="password" id="password" aria-label="Password" placeholder="Ingrese su password" required>
+                <img src="https://www.svgrepo.com/show/84319/password.svg" alt="Password Icon" title="Password Icon">
+            </div>
+            <input type="submit" class="my_form_button" value="Login">
+            <div class="my_form_actions">
+                <div class="my_form_row">
+                    <span>Olvidaste tu contraseña</span>
+                    <a href="#" title="Recuperar contraseña">Recuperar contraseña</a>
+                </div>
+                <div class="my_form_signup">
+                    <a href="#" title="Crear cuenta">Crear cuenta</a>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
